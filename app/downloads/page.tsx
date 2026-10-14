@@ -69,6 +69,96 @@ export default function DownloadsPage() {
           </li>
         ))}
       </ul>
+
+      <h2 className="font-heading mt-12 text-2xl tracking-tight">Job hunt</h2>
+      <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+        Separate from the study paths. BA only for now. Internship already
+        finished — apply as Junior / Associate BA.
+      </p>
+      <ul className="mt-4 grid gap-4 md:grid-cols-2">
+        <li>
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading flex items-center gap-2 text-xl">
+                <FileTextIcon className="size-4 shrink-0" />
+                Find a BA job after the internship
+              </CardTitle>
+              <CardDescription>
+                Sri Lanka IT. File: intern-path-jobs-ba.md
+              </CardDescription>
+            </CardHeader>
+            <CardFooter className="flex flex-wrap gap-2">
+              <a
+                href="/api/download/jobs-ba"
+                className={cn(buttonVariants())}
+              >
+                Download .md
+              </a>
+              <Link
+                href="/jobs"
+                className={cn(buttonVariants({ variant: "outline" }))}
+              >
+                Read online
+              </Link>
+            </CardFooter>
+          </Card>
+        </li>
+        <li>
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading flex items-center gap-2 text-xl">
+                <FileTextIcon className="size-4 shrink-0" />
+                Junior BA CV (filled sample)
+              </CardTitle>
+              <CardDescription>
+                One page. File: Junior_BA_CV_sample.txt — or print the formatted
+                page to PDF.
+              </CardDescription>
+            </CardHeader>
+            <CardFooter className="flex flex-wrap gap-2">
+              <a
+                href="/api/download/jobs-ba-cv"
+                className={cn(buttonVariants())}
+              >
+                Download .txt
+              </a>
+              <Link
+                href="/jobs/ba-cv"
+                className={cn(buttonVariants({ variant: "outline" }))}
+              >
+                Formatted CV
+              </Link>
+            </CardFooter>
+          </Card>
+        </li>
+        <li>
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading flex items-center gap-2 text-xl">
+                <FileTextIcon className="size-4 shrink-0" />
+                Junior BA CV (blank template)
+              </CardTitle>
+              <CardDescription>
+                Fill the [brackets]. File: Junior_BA_CV_template.txt
+              </CardDescription>
+            </CardHeader>
+            <CardFooter className="flex flex-wrap gap-2">
+              <a
+                href="/api/download/jobs-ba-cv-template"
+                className={cn(buttonVariants())}
+              >
+                Download .txt
+              </a>
+              <Link
+                href="/jobs/ba-cv"
+                className={cn(buttonVariants({ variant: "outline" }))}
+              >
+                Formatted CV
+              </Link>
+            </CardFooter>
+          </Card>
+        </li>
+      </ul>
     </main>
   )
 }

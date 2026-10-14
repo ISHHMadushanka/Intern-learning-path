@@ -337,6 +337,84 @@
   animation-delay: -6s;
 }
 
+.cv-sheet {
+  max-width: 210mm;
+  margin-inline: auto;
+  background: #fff;
+  color: #16181d;
+  padding: 14mm 16mm;
+  box-shadow: 0 0 0 1px var(--border);
+  font-size: 10.25pt;
+  line-height: 1.38;
+}
+
+.cv-sheet h1 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.cv-sheet .cv-title {
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3d4a52;
+}
+
+.cv-sheet .cv-tag {
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+  color: #5b6570;
+}
+
+.cv-sheet .cv-contact {
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+  color: #3d4a52;
+}
+
+.cv-sheet h2 {
+  margin-top: 0.95rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid #cfd4d8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cv-sheet p,
+.cv-sheet ul {
+  margin: 0;
+}
+
+.cv-sheet ul {
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.cv-sheet li {
+  margin-bottom: 0.22rem;
+}
+
+.cv-sheet .cv-job-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  font-size: 0.88rem;
+}
+
+.cv-sheet a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media print {
   body {
     background: white !important;
@@ -348,5 +426,20 @@
     font-size: 0.75em;
     color: #444;
     word-break: break-all;
+  }
+
+  .cv-print a[href]::after {
+    content: none !important;
+  }
+
+  .cv-sheet {
+    max-width: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 14mm;
   }
 }

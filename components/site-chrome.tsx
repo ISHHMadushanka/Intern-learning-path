@@ -7,6 +7,7 @@ const links = [
   { href: "/guides/qa", label: "QA" },
   { href: "/guides/ba", label: "BA" },
   { href: "/guides/devops", label: "DevOps" },
+  { href: "/jobs", label: "Jobs" },
   { href: "/guides/ai", label: "AI" },
   { href: "/guides/team", label: "Team" },
   { href: "/downloads", label: "Files" },

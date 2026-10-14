@@ -30,3 +30,4 @@ Study files live in `content/guides/`.
 | AI for interns | Everyone |
 | How the roles work together | Mixed intern teams |
 | How to share this | Intern leads |
+| Jobs after internship (`/jobs`) | BA job hunt after internship (Sri Lanka IT); CV at `/jobs/ba-cv` |

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import {
   ArrowRightIcon,
+  BriefcaseIcon,
   CloudIcon,
   Code2Icon,
   CompassIcon,
@@ -121,7 +122,7 @@ export default function HomePage() {
         })}
       </section>
 
-      <section className="relative mx-auto grid w-full max-w-6xl gap-4 px-4 py-8 sm:grid-cols-2">
+      <section className="relative mx-auto grid w-full max-w-6xl gap-4 px-4 py-8 sm:grid-cols-2 lg:grid-cols-3">
         <Link
           href="/guides/ai"
           className="home-fade home-delay-6 rounded-2xl bg-card p-5 ring-1 ring-foreground/10 transition-transform hover:-translate-y-1"
@@ -146,6 +147,19 @@ export default function HomePage() {
           <p className="mt-2 text-sm leading-6 text-muted-foreground">
             Software is a team sport. A short drill so Dev, QA, BA, and DevOps
             intern work does not bounce over a wall.
+          </p>
+        </Link>
+        <Link
+          href="/jobs"
+          className="home-fade home-delay-6 rounded-2xl bg-card p-5 ring-1 ring-foreground/10 transition-transform hover:-translate-y-1"
+        >
+          <BriefcaseIcon className="size-5 text-primary" />
+          <h2 className="font-heading mt-3 text-xl tracking-tight">
+            Jobs after internship
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            BA first: internship finished, Sri Lanka IT boards, junior BA CV,
+            LinkedIn, and interview pack.
           </p>
         </Link>
       </section>
